@@ -8,7 +8,7 @@ function App() {
 
   const getWeather = (event) => {
     if (event.key === 'Enter') {
-      fetch (`api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`).then(
+      fetch (`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}`).then(
         response => response.json()
       ).then(
         data => {
